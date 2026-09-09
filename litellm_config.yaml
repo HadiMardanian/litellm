@@ -1,0 +1,139 @@
+model_list:
+  # === Mistral ===
+  - model_name: mistral-7b
+    litellm_params:
+      model: mistral/open-mistral-7b
+      api_key: os.environ/MISTRAL_API_KEY
+
+  - model_name: mistral-tiny
+    litellm_params:
+      model: mistral/mistral-tiny
+      api_key: os.environ/MISTRAL_API_KEY
+
+  - model_name: mistral-small
+    litellm_params:
+      model: mistral/mistral-small-latest
+      api_key: os.environ/MISTRAL_API_KEY
+
+  - model_name: mistral-medium
+    litellm_params:
+      model: mistral/mistral-medium-latest
+      api_key: os.environ/MISTRAL_API_KEY
+
+  - model_name: codestral
+    litellm_params:
+      model: mistral/codestral-latest
+      api_key: os.environ/MISTRAL_API_KEY
+
+  # === OpenRouter Free Models ===
+  - model_name: llama-3.3-70b
+    litellm_params:
+      model: openrouter/meta-llama/llama-3.3-70b-instruct:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: gemma-4-26b
+    litellm_params:
+      model: openrouter/google/gemma-4-26b-a4b-it:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: qwen3-coder
+    litellm_params:
+      model: openrouter/qwen/qwen3-coder:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: kimi-k2.6
+    litellm_params:
+      model: openrouter/moonshotai/kimi-k2.6:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: gpt-oss-120b
+    litellm_params:
+      model: openrouter/openai/gpt-oss-120b:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: nemotron-super
+    litellm_params:
+      model: openrouter/nvidia/nemotron-3-super-120b-a12b:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: deepseek-r1
+    litellm_params:
+      model: openrouter/deepseek/deepseek-r1:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  # === Groq Free Models ===
+  - model_name: groq-llama-3.3-70b
+    litellm_params:
+      model: groq/llama-3.3-70b-versatile
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: groq-qwen3-32b
+    litellm_params:
+      model: groq/qwen3-32b
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: groq-gpt-oss-120b
+    litellm_params:
+      model: groq/gpt-oss-120b
+      api_key: os.environ/GROQ_API_KEY
+
+  - model_name: groq-llama-4-scout
+    litellm_params:
+      model: groq/llama-4-scout-17b-16e-instruct
+      api_key: os.environ/GROQ_API_KEY
+
+  # === Google Gemini Free ===
+  - model_name: gemini-2.5-flash
+    litellm_params:
+      model: gemini/gemini-2.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: gemini-2.5-pro
+    litellm_params:
+      model: gemini/gemini-2.5-pro
+      api_key: os.environ/GEMINI_API_KEY
+
+  - model_name: gemini-3.5-flash
+    litellm_params:
+      model: gemini/gemini-3.5-flash
+      api_key: os.environ/GEMINI_API_KEY
+
+  # === SambaNova Free ===
+  - model_name: sambanova-deepseek-v3
+    litellm_params:
+      model: sambanova/DeepSeek-V3-0324
+      api_key: os.environ/SAMBANOVA_API_KEY
+
+  - model_name: sambanova-llama-3.3-70b
+    litellm_params:
+      model: sambanova/Meta-Llama-3.3-70B-Instruct
+      api_key: os.environ/SAMBANOVA_API_KEY
+
+  - model_name: sambanova-gpt-oss-120b
+    litellm_params:
+      model: sambanova/gpt-oss-120b
+      api_key: os.environ/SAMBANOVA_API_KEY
+
+  # === NVIDIA NIM Free ===
+  - model_name: nvidia-kimi-k2.6
+    litellm_params:
+      model: nvidia_nim/moonshotai/kimi-k2.6
+      api_key: os.environ/NVIDIA_API_KEY
+
+  - model_name: nvidia-deepseek-v4
+    litellm_params:
+      model: nvidia_nim/deepseek-ai/deepseek-v4-flash
+      api_key: os.environ/NVIDIA_API_KEY
+
+  - model_name: nvidia-llama-4
+    litellm_params:
+      model: nvidia_nim/meta/llama-4-maverick-17b-128e-instruct
+      api_key: os.environ/NVIDIA_API_KEY
+
+litellm_settings:
+  master_key: sk-1234
+  drop_params: true
+  set_verbose: false
+
+general_settings:
+  completion_model: mistral-7b
