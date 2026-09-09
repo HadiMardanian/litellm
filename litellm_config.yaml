@@ -112,6 +112,16 @@ model_list:
       model: openrouter/liquid/lfm-2.5-2.6b:free
       api_key: os.environ/OPENROUTER_API_KEY
 
+  - model_name: ling-flash-fin
+    litellm_params:
+      model: openrouter/inclusionai/ling-3.0-flash-fin:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: ling-flash-sante
+    litellm_params:
+      model: openrouter/inclusionai/ling-3.0-flash-sante:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
   # === Groq Free Models ===
   - model_name: groq-llama-3.3-70b
     litellm_params:
