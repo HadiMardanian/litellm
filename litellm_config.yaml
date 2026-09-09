@@ -61,6 +61,57 @@ model_list:
       model: openrouter/deepseek/deepseek-r1:free
       api_key: os.environ/OPENROUTER_API_KEY
 
+  # === OpenRouter Free Models (trending 2026) ===
+  - model_name: laguna-s-2.1
+    litellm_params:
+      model: openrouter/poolside/laguna-s-2.1:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: laguna-xs-2.1
+    litellm_params:
+      model: openrouter/poolside/laguna-xs-2.1:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: north-mini-code
+    litellm_params:
+      model: openrouter/cohere/north-mini-code:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: nex-n2.5-pro
+    litellm_params:
+      model: openrouter/nex-agi/nex-n2.5-pro:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: nemotron-3-ultra
+    litellm_params:
+      model: openrouter/nvidia/nemotron-3-ultra-550b-a55b:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: nemotron-3.5-lightning
+    litellm_params:
+      model: openrouter/nvidia/nemotron-3.5-lightning:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: inkling
+    litellm_params:
+      model: openrouter/thinkingmachines/inkling:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: inkling-small
+    litellm_params:
+      model: openrouter/thinkingmachines/inkling-small:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: gemma-4-31b
+    litellm_params:
+      model: openrouter/google/gemma-4-31b-it:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
+  - model_name: lfm-2.5
+    litellm_params:
+      model: openrouter/liquid/lfm-2.5-2.6b:free
+      api_key: os.environ/OPENROUTER_API_KEY
+
   # === Groq Free Models ===
   - model_name: groq-llama-3.3-70b
     litellm_params:
